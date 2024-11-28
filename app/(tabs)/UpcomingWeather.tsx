@@ -93,25 +93,6 @@ const styles = StyleSheet.create({
     marginTop: StatusBar.currentHeight || 0,
     backgroundColor: "beige",
   },
-  item: {
-    padding: 20,
-    marginVertical: 8,
-    marginHorizontal: 16,
-    gap: 10,
-    flexDirection: "row",
-    justifyContent: "space-around",
-    alignItems: "center",
-    borderWidth: 5,
-    backgroundColor: "pink",
-  },
-  date: {
-    color: "white",
-    fontSize: 15,
-  },
-  temp: {
-    color: "white",
-    fontSize: 20,
-  },
   bgImage: {
     flex: 1,
   },
