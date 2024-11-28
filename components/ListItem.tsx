@@ -46,9 +46,6 @@ const styles = StyleSheet.create({
     color: "white",
     fontSize: 20,
   },
-  bgImage: {
-    flex: 1,
-  },
 });
 
 export default ListItem;
