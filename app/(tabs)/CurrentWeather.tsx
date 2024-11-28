@@ -4,17 +4,28 @@ import { Feather } from "@expo/vector-icons";
 import RowText from "@/components/RowText";
 
 const CurrentWeather = () => {
+  const {
+    container,
+    wrapper,
+    temp,
+    feels,
+    HighLowWrapper,
+    hilo,
+    bodyWrapper,
+    description,
+    message,
+  } = styles;
   return (
-    <SafeAreaView style={styles.wrapper}>
+    <SafeAreaView style={wrapper}>
       {/* Top content */}
-      <View style={styles.container}>
+      <View style={container}>
         <Feather name="sun" size={60} color="white" />
-        <Text style={styles.temp}>6°C</Text>
-        <Text style={styles.feels}>Feels like: 5°C</Text>
+        <Text style={temp}>6°C</Text>
+        <Text style={feels}>Feels like: 5°C</Text>
         <RowText
-          wrapperStyles={styles.HighLowWrapper}
-          textStyleOne={styles.hilo}
-          textStyleTwo={styles.hilo}
+          wrapperStyles={HighLowWrapper}
+          textStyleOne={hilo}
+          textStyleTwo={hilo}
           messageOne={"Hi: 34°C"}
           messageTwo={"Lo: 20°C"}
         />
@@ -22,9 +33,9 @@ const CurrentWeather = () => {
 
       {/* Bottom content */}
       <RowText
-        wrapperStyles={styles.bodyWrapper}
-        textStyleOne={styles.description}
-        textStyleTwo={styles.message}
+        wrapperStyles={bodyWrapper}
+        textStyleOne={description}
+        textStyleTwo={message}
         messageOne={"It's Sunny"}
         messageTwo={"It's perfect T-shirt weather"}
       />
