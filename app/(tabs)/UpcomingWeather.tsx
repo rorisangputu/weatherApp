@@ -1,4 +1,5 @@
 /* eslint-disable @typescript-eslint/no-require-imports */
+import ListItem from "@/components/ListItem";
 import React from "react";
 import {
   SafeAreaView,
@@ -62,7 +63,7 @@ interface WeatherData {
 
 const UpcomingWeather = () => {
   const renderItem = ({ item }: { item: WeatherData }) => (
-    <Item
+    <ListItem
       condition={item.weather[0].main}
       dt_text={item.dt_text}
       min={item.main.temp_min}
