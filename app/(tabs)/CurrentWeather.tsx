@@ -1,6 +1,7 @@
 import React from "react";
 import { View, Text, SafeAreaView, StyleSheet } from "react-native";
 import { Feather } from "@expo/vector-icons";
+import RowText from "@/components/RowText";
 
 const CurrentWeather = () => {
   return (
@@ -10,17 +11,23 @@ const CurrentWeather = () => {
         <Feather name="sun" size={60} color="white" />
         <Text style={styles.temp}>6°C</Text>
         <Text style={styles.feels}>Feels like: 5°C</Text>
-        <View style={styles.HighLowWrapper}>
-          <Text style={styles.hilo}>Hi: 10°C</Text>
-          <Text style={styles.hilo}>Lo: 6°C</Text>
-        </View>
+        <RowText
+          wrapperStyles={styles.HighLowWrapper}
+          textStyleOne={styles.hilo}
+          textStyleTwo={styles.hilo}
+          messageOne={"Hi: 34°C"}
+          messageTwo={"Lo: 20°C"}
+        />
       </View>
 
       {/* Bottom content */}
-      <View style={styles.bodyWrapper}>
-        <Text style={styles.description}>It&apos;s Sunny</Text>
-        <Text style={styles.message}>It&apos;s perfect T-shirt weather</Text>
-      </View>
+      <RowText
+        wrapperStyles={styles.bodyWrapper}
+        textStyleOne={styles.description}
+        textStyleTwo={styles.message}
+        messageOne={"It's Sunny"}
+        messageTwo={"It's perfect T-shirt weather"}
+      />
     </SafeAreaView>
   );
 };
