@@ -1,11 +1,12 @@
 import React from "react";
-import CurrentWeather from "@/components/CurrentWeather";
+// import CurrentWeather from "@/components/CurrentWeather";
 import { View, StyleSheet } from "react-native";
+import UpcomingWeather from "@/app/(tabs)/UpcomingWeather";
 
 const HomeScreen = () => {
   return (
     <View style={styles.container}>
-      <CurrentWeather />
+      <UpcomingWeather />
     </View>
   );
 };

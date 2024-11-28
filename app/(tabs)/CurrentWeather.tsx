@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, SafeAreaView, StyleSheet, ScrollView } from "react-native";
+import { View, Text, SafeAreaView, StyleSheet } from "react-native";
 import { Feather } from "@expo/vector-icons";
 
 const CurrentWeather = () => {
@@ -18,8 +18,8 @@ const CurrentWeather = () => {
 
       {/* Bottom content */}
       <View style={styles.bodyWrapper}>
-        <Text style={styles.description}>It's Sunny</Text>
-        <Text style={styles.message}>It's perfect T-shirt weather</Text>
+        <Text style={styles.description}>It&apos;s Sunny</Text>
+        <Text style={styles.message}>It&apos;s perfect T-shirt weather</Text>
       </View>
     </SafeAreaView>
   );
